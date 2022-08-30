@@ -1,4 +1,4 @@
-# fluuter_finance_app
+# financeapp
 
 A simple finance app to keep track of your daily transactions.
 

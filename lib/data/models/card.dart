@@ -1,7 +1,7 @@
 import 'dart:ui';
 
 import 'package:flutter/material.dart';
-import 'package:fluuter_finance_app/utils/colors.dart';
+import 'package:financeapp/utils/colors.dart';
 
 class Card {
   late String name;
@@ -14,19 +14,18 @@ class Card {
   late Color firstColor;
   late Color secondColor;
 
-  Card({
-    required this.name,
-    required this.type,
-    required this.balance,
-    required this.valid,
-    required this.moreIcon,
-    required this.cardBackground,
-    required this.bgColor,
-    required this.firstColor,
-    required this.secondColor
-  });
+  Card(
+      {required this.name,
+      required this.type,
+      required this.balance,
+      required this.valid,
+      required this.moreIcon,
+      required this.cardBackground,
+      required this.bgColor,
+      required this.firstColor,
+      required this.secondColor});
 
-  Card.fromJson(Map<String, dynamic> json){
+  Card.fromJson(Map<String, dynamic> json) {
     name = json["name"];
     type = json["type"];
     balance = json["balance"];
@@ -38,7 +37,7 @@ class Card {
     secondColor = json["secondColor"];
   }
 
-  Map<String, dynamic> toJson(){
+  Map<String, dynamic> toJson() {
     return {
       "name": name,
       "type": type,
@@ -51,43 +50,39 @@ class Card {
       "secondColor": secondColor
     };
   }
-
 }
 
 final List<Card> cardList = [
   Card(
       name: "Victor",
-      type : "assets/images/mastercard.png",
-      balance : "5,450",
-      valid : "06/23",
-      moreIcon : "assets/images/more.svg",
-      cardBackground : "",
-      bgColor : AppColors.kMasterCardColor,
-      firstColor : AppColors.kGreyColor,
-      secondColor : AppColors.kBlackColor
-  ),
+      type: "assets/images/mastercard.png",
+      balance: "5,450",
+      valid: "06/23",
+      moreIcon: "assets/images/more.svg",
+      cardBackground: "",
+      bgColor: AppColors.kMasterCardColor,
+      firstColor: AppColors.kGreyColor,
+      secondColor: AppColors.kBlackColor),
   Card(
-      name : "Victor",
-      type : "assets/images/verve.png",
-      balance : "5,450",
-      valid : "06/23",
-      moreIcon : "assets/images/more.svg",
-      cardBackground : "",
-      bgColor : AppColors.kGeniusColor,
-      firstColor : AppColors.kWhiteColor,
-      secondColor : AppColors.kWhiteColor
-  ),
+      name: "Victor",
+      type: "assets/images/verve.png",
+      balance: "5,450",
+      valid: "06/23",
+      moreIcon: "assets/images/more.svg",
+      cardBackground: "",
+      bgColor: AppColors.kGeniusColor,
+      firstColor: AppColors.kWhiteColor,
+      secondColor: AppColors.kWhiteColor),
   Card(
-  name : "Soma Anton",
-  type : "assets/images/mastercard.png",
-  balance : "5,450",
-  valid : "06/23",
-  moreIcon : "assets/images/more.svg",
-  cardBackground : "",
-  bgColor : AppColors.kMasterCardColor,
-  firstColor : AppColors.kGreyColor,
-  secondColor : AppColors.kBlackColor
-  )
+      name: "Soma Anton",
+      type: "assets/images/mastercard.png",
+      balance: "5,450",
+      valid: "06/23",
+      moreIcon: "assets/images/more.svg",
+      cardBackground: "",
+      bgColor: AppColors.kMasterCardColor,
+      firstColor: AppColors.kGreyColor,
+      secondColor: AppColors.kBlackColor)
 ];
 
 

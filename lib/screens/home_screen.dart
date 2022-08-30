@@ -1,11 +1,11 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/svg.dart';
-import 'package:fluuter_finance_app/custom_icons/app_icons.dart';
-import 'package:fluuter_finance_app/data/models/card.dart';
-import 'package:fluuter_finance_app/data/models/transaction.dart';
-import 'package:fluuter_finance_app/data/models/wallet.dart';
-import 'package:fluuter_finance_app/utils/colors.dart';
+import 'package:financeapp/custom_icons/app_icons.dart';
+import 'package:financeapp/data/models/card.dart';
+import 'package:financeapp/data/models/transaction.dart';
+import 'package:financeapp/data/models/wallet.dart';
+import 'package:financeapp/utils/colors.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:slide_to_confirm/slide_to_confirm.dart';
 
